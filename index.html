@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Face Chooser</title>
+</head>
+<style>
+    body{
+        background-color: pink;
+        height: 100vh;        
+    }
+    .heading{
+        font-size: 50px;
+        margin-top: 30px;
+    }
+    .container{
+        width: 400px;
+        margin: auto;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .img-container{
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+        padding-top: 5px;
+   }
+    .sub-container2{
+        display: block;
+    
+        width: 400px;
+        margin-left: 50px;
+        margin-top: 20px;
+
+    }
+    .smallimg{
+        height: 50px;
+        width: 50;
+        margin: 5px;
+        border-radius: 50px;
+      
+    }
+    .height{
+       height:50px;
+       width: 50px;
+    }
+
+</style>
+<body>
+    <center><h1 class="heading">Photo Toggler😻</h1></center>
+    <div class="container">
+        <div class="sub-container1">
+            <img src="cat4.jpeg" id="img" class="img-container"/>
+        </div>
+        <div class="sub-container2">
+            <img src="cat7.jpg" class="smallimg height" onclick="phototoggle()"/>
+            <img src="cat2.jpg" class="smallimg height" onclick="phototoggle1()"/>
+            <img src="cat3.jpg" class="smallimg" onclick="phototoggle2()"/>
+            <img src="cat4.jpeg" class="smallimg" onclick="phototoggle3()"/>
+            <img src="cat1.jpg" class="smallimg " onclick="phototoggle4()"/>
+          </div>
+
+    </div>
+    <script>
+        function phototoggle()
+            {
+            const photoElement=document.getElementById('img')
+            photoElement.src='cat4.jpeg';       
+           }
+         function phototoggle1()
+            {
+            const photoElement=document.getElementById('img')
+            photoElement.src='cat3.jpg';       
+            }
+         function phototoggle2()
+              {
+            const photoElement=document.getElementById('img')
+            photoElement.src='cat2.jpg';       
+            }
+        function phototoggle3()
+              {
+            const photoElement=document.getElementById('img')
+            photoElement.src='cat1.jpg';    
+            }
+            function phototoggle4()
+              {
+            const photoElement=document.getElementById('img')
+            photoElement.src='cat7.jpg';    
+            }
+
+    </script>
+</body>
+</html>
